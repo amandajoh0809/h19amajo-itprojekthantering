@@ -1,0 +1,259 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: black;
+  }
+  
+  body {
+    font-size: 18px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  }
+
+  header {
+    padding: 20px;  
+  } 
+
+  .start {
+    justify-content: flex-start;
+  }
+
+  .start img { /*Färgen på fonten blir röd för att visa vilken sida man är*/
+    color: rgb(197, 33, 33);
+    max-width: 200px;
+    max-height: 200px;
+    justify-content: flex-start;
+   
+  }
+  nav.desktop_menu {
+    font-size: 24px; 
+    top: 0; 
+    width: 100%;
+    text-align: center;
+    background-color: rgb(7, 6, 6);   
+  }
+
+  nav.desktop_menu ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+  }
+
+  nav.desktop_menu li {
+    justify-content: center;
+  }
+
+  nav.desktop_menu li a {
+    display: block;
+    color: rgb(236, 233, 233);
+    text-align: center;
+    padding: 10px 20px;
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+    text-transform: uppercase;
+    justify-content: center;
+  }
+
+  nav.desktop_menu li a:hover {
+    color: rgb(241, 48, 48);  
+  }
+
+  /* MENY FÖR MOBILER*/
+
+  .mobile_menu { /*Meny anpassade för mobiler*/
+  display: none; /* Försvinner när det blir desktopläge*/
+  }
+
+  .mobile_menu button {
+    color: #fff;
+    font-size: 1.2rem;
+    width: 100%;
+    border: none;
+    padding: 10px; 
+  }
+
+  nav.menu {
+    display: none;
+  }
+
+  button + nav.menu:active, button:focus + nav.menu {
+    display: contents;
+  }
+
+  nav.menu ul {
+    background-color: rgb(15, 15, 15);
+    padding: 0px;
+    list-style: none;
+  }
+
+  nav.menu li a:hover, li a:active {
+    color: rgb(211, 48, 48);
+    text-decoration: none;
+  }
+
+  .albums {
+    color: rgb(245, 244, 244);
+    text-align: center;
+    font-size: 24px;
+    padding: 20px;
+    background-image: linear-gradient(to right, rgba(70, 65, 65, 0.877), rgb(8, 8, 8));
+  }
+
+  img {
+    width: 340px;
+    height: 300px; 
+  }
+
+  /*MEDIA QUEIRES*/
+@media (max-width:767.98px){
+  nav.desktop_menu {
+    display: none;
+}
+
+  .mobile_menu {
+    display: contents;
+    font-size: 1.5rem;
+    position: sticky;
+    top: 0;
+    width: 100%;
+  }
+}
+
+/*PUFF FÖR ALBUM*/
+
+section.puff-container {
+    width: 90%;
+    margin: 0 auto;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    justify-content: flex-start;
+    flex-wrap: wrap; 
+    border: black;
+  } 
+  
+  .puff-container h1 {
+    font-size: 2.5rem; 
+    color: rgb(247, 245, 245);
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+  }
+  
+  .puff {
+    width: 33.333%; 
+    padding: 20px;
+    min-width: 200px;
+    justify-content: center;
+    margin: auto;
+  }
+
+  .puff-container img { /*bara bilderna i puff-container som ändras*/
+    width: 100%;
+    display: block;
+    border-radius: 50%;
+    padding: 20px; 
+    max-width: 350px;
+    min-width: 200px;
+    margin: auto;  
+  }
+
+  .puff a {
+    text-decoration: none;
+    color:rgb(250, 246, 246);
+    font-size: 1.5rem;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-align: center;
+    justify-content: center;
+  }
+
+  /*FOOTER*/
+  footer {
+    padding: 20px;
+    display: flex;
+    justify-content: flex-start;
+    
+  }
+  
+  .fa {
+    padding: 20px; 
+    font-size: 30px; 
+    width: 50px; 
+    text-align: center;
+    text-decoration: none; 
+    margin: 5px 15px; 
+    
+  }
+  
+  .fa-facebook, .fa-twitter, .fa-google, .fa-youtube{
+    color: rgb(250, 241, 241);
+  }
+
+  .fa-facebook:hover {
+    color: rgb(23, 13, 158); 
+  }
+  
+  .fa-twitter:hover {
+    color: rgb(85, 140, 192);
+  }
+  
+  .fa-google:hover {
+    color: rgb(241, 223, 56);
+  }
+  
+  .fa-youtube:hover {
+    color: red;
+  }
+  
+  .design {
+    color: white;
+    padding: 20px; 
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  }
+
+  .design:hover {
+    color: rgb(179, 54, 54);
+  }
+
+  
+  /* MEDIA QUERIES*/
+
+@media (min-width: 376px) and (max-width: 767.98px) {
+
+  .albums p {
+    font-size: 1rem;
+  }
+
+  .puff-container > .puff h1 {
+      width: 100%;
+      font-size: 1rem;
+  }
+
+  footer {
+    padding: 20px;
+    display: flex;
+    justify-content: flex-start; 
+  }
+  
+  .fa {
+    padding: 0px; 
+    font-size: 10px; 
+    width: 100%; 
+    text-align: center;
+    text-decoration: none; 
+   
+    
+  }
+
+  .design {
+    display: none;
+  }
+
+}
+
+@media (max-width: 576px) { /* Max width för små enheter i lanscapeläge. När det blir mindre än 576px kommer det bli anpassat för små enheter.*/
+  
+  .puff-container > .puff h1{
+      font-size: 1rem;
+  }
+}
