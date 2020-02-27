@@ -1,0 +1,101 @@
+:root
+{
+    --main-text-color: rgb(25,25,25);
+    --main-hover-text-color: rgb(60,60,60);
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    color: var(--main-text-color)
+}
+
+header
+{
+    border-bottom: 1px solid gray;
+    display: flex;
+    align-items: center;
+    
+    
+}
+a.home-logo-no-text>img
+{
+    width: 30%;
+}
+a.header-link
+{
+    width: 33.333%;
+    text-align: center;
+    text-decoration: none;
+}
+
+.header h1 {
+    font-size: 3.5rem;
+    justify-content: center;
+    text-transform: uppercase;
+}
+.purchase {
+    font-size: 2.5rem;
+    display: flex;
+    justify-content: center;
+    margin-top: 70px;
+}
+.firework {
+    display: flex;
+    justify-content:center;
+    border-bottom: grey solid 1px;
+    padding: 40px; 
+}
+
+.firework img{
+    max-width: 200px;
+    justify-content: center;
+}
+
+
+.confirmation {
+    font-size: 1.5rem;
+    display: flex;
+    justify-content: center;
+    justify-content: space-between;
+    flex-direction: column;
+    margin: 20px;
+    padding: 20px; 
+   
+
+
+}
+
+.order {
+    margin-left: 50px;
+    padding: 10px; 
+    color: grey;
+}
+
+.order p {
+    font-size: 1.5rem;
+
+}
+
+.price {
+    margin-left: 50px;
+    padding: 10px; 
+    color: grey;
+}
+
+.price p {
+    font-size: 1.5rem;
+}
+
+.payment {
+    margin-left: 50px;
+    padding: 10px; 
+    color: grey;
+}
+
+.payment {
+    font-size: 1.5rem;
+}
+
+

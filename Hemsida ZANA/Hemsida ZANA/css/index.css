@@ -1,0 +1,297 @@
+:root
+{
+    --main-text-color: rgb(25,25,25);
+    --main-hover-text-color: rgb(60,60,60);
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    color: var(--main-text-color)
+}
+*a:visited, *a
+{
+    color: var(--main-text-color);
+}
+/* Header styling start*/
+.header-mobile
+{
+    display: none;
+}
+header
+{
+    border-bottom: 1px solid gray;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+a.home-logo-no-text>img
+{
+    width: 30%;
+   margin-left: auto;
+}
+a.header-link
+{
+    width: 33.333%;
+    text-align: center;
+    text-decoration: none;
+    
+}
+a.shopping-cart>img
+{
+    width: 40px;
+    margin: 0;
+}
+a.header-link>h1
+{
+    font-size: 3rem;
+    text-transform: uppercase;
+    
+    
+}
+a.header-link>h1::first-letter
+{
+    font-size: 4.3rem;
+}
+
+.home-button {
+    margin: 20px; 
+    padding: 20px; 
+    text-decoration: none;
+    background-color: rgba(122, 118, 118, 0.336);
+    border-radius: 30%;
+
+}
+
+/* Header styling end */
+
+/* Main container */
+section.main-container
+{
+    width: 100% ;
+    margin: 0 auto;
+    
+}
+
+/* Deskop nav styling start */
+nav
+{
+    margin: 1.5rem 1.5rem;
+}
+.nav-mobile
+{
+    display: none;
+}
+.ul
+{
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+.ul-nav-desktop>li
+{
+    margin-right: 2rem;
+    font-size: 1.5rem;
+}
+/* Desktop nav styling end */
+
+/* Underline Animation start*/
+.underline
+{
+    color: var(--main-text-color);
+    text-decoration: none;
+    display: inline-block;
+}  
+.underline:after 
+{
+    content: '';
+    width: 0px;
+    height: 1px;
+    color: var(--main-hover-text-color);
+    background: var(--main-hover-text-color);
+    display: block;
+    transition: 300ms;
+}
+.underline:hover:after
+{
+    width: 100%;
+}
+/* Underline Animation end */
+
+/* Produktartikel styling start */
+section.puff-container
+{
+    margin-top: 2rem;
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    margin: 0 auto;
+    padding-top: 50px;
+}
+.puff-music
+{
+    padding: 10px;
+    width: 33%;
+    display: flex;
+    flex-flow: row wrap;
+    margin-bottom: 1rem;
+    
+}
+.puff-music>a>img
+{
+    width: 100%;
+    max-width: 500px;
+    border-radius: 0%;
+}
+
+.puff-music h1 {
+    font-size: 1.5rem;
+    justify-content: flex-start;
+}
+.product-title
+{
+    width: 100%;
+    margin-bottom: 5px;
+}
+.bottom-content
+{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+}
+.puff-music
+{
+    background-color: rgba(199, 190, 190, 0.411);
+    
+}
+
+/* Produktartikel styling end */
+
+
+/* Footer styling start */
+footer
+{
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-evenly;
+    background-color: whitesmoke;
+    align-items: center;
+    
+}
+.links-footer 
+{
+    display: flex;
+    width: 33%;
+    padding: 20px;
+}
+.links-left
+{
+    text-align: center;
+    flex-direction: column;
+}
+.links-center
+{
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.links-right 
+{
+    flex-direction: column;
+    text-align: right;
+}
+.links-right>p 
+{
+    font-size: 1rem;
+}
+.links-right>a
+{
+    font-size: 1.5rem;
+}
+.fas
+{
+    font-size: 2rem;
+}
+/* Footer styling end */
+
+@media screen and (max-width: 767.98px) {
+
+    /* Header och nav styling start */
+    .header-desktop, .nav-desktop
+    {
+        display: none;
+    }
+    a.header-link
+    {
+        width: 10%;
+    }
+    .nav-mobile
+    {
+        display: contents;
+    }
+    /* Style the navigation menu */
+    .topnav 
+    {
+        height: 10vh;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        
+        background-color: white;
+        position: relative;    
+        border-bottom: 1px solid gray;
+    }
+
+    /* Hide the links inside the navigation menu (except for logo/home) */
+    .topnav #myLinks
+    {
+        display: none;
+        position: fixed;
+        top: 10vh;
+        z-index: 5;
+        background-color: white;
+        width: 100%;
+    }
+
+    /* Style navigation menu links */
+    .topnav a 
+    {
+        color: rgb(25,25,25);
+        text-decoration: none;
+        font-size: 17px;
+        display: block;
+    }
+
+    /* Style the hamburger menu */
+    
+    a.icon>i
+    {
+        font-size: 2rem;
+        margin: auto 0;
+    }
+    .li-mobile-nav
+    {
+        text-align: center;
+        font-weight: bold;
+        padding: 1rem 0;
+        border-top: 1px solid rgba(128,128,128,0.4);
+    }
+    .li-mobile-nav:last-child
+    {
+        border-bottom: 1px solid rgba(128,128,128,0.4);
+    }
+    a.home-logo>img
+    {
+        width: 15vw;
+    }
+
+    /* Header och nav styling end */
+
+   
+   
+}
