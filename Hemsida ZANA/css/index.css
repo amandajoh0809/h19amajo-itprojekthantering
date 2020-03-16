@@ -30,34 +30,82 @@ header
 a.home-logo-no-text>img
 {
     width: 30%;
+   margin-left: auto;
 }
 a.header-link
 {
     width: 33.333%;
     text-align: center;
     text-decoration: none;
+    
 }
 a.shopping-cart>img
 {
     width: 40px;
+    margin: 0;
 }
 a.header-link>h1
 {
     font-size: 3rem;
     text-transform: uppercase;
+    
+    
 }
 a.header-link>h1::first-letter
 {
     font-size: 4.3rem;
 }
+
+.home-button {
+    margin: 20px; 
+    padding: 20px; 
+    text-decoration: none;
+    background-color: rgba(122, 118, 118, 0.336);
+    border-radius: 30%;
+
+}
+
+/*Brödsmulor*/
+
+ul.breadcrumb {
+    padding: 10px 16px; 
+    list-style: none;
+    
+  }
+  
+  /* Display list items side by side */
+  ul.breadcrumb li {
+    list-style: none;
+    font-size: 12px;
+    font-style: italic;
+  }
+  
+  /* Add a slash symbol (/) before/behind each list item */
+  ul.breadcrumb li+li:before {
+    padding: 8px;
+    color: black;
+    content: "/\00a0";
+  }
+  
+  /* Add a color to all links inside the list */
+  ul.breadcrumb li a {
+    color: #03080c;
+    text-decoration: none;
+  }
+  
+  /* Add a color on mouse-over */
+  ul.breadcrumb li a:hover {
+    color: #808285;
+    text-decoration: underline;
+  }
+
 /* Header styling end */
 
 /* Main container */
 section.main-container
 {
+    width: 100% ;
     margin: 0 auto;
-    width: 60%;
-    
     
 }
 
@@ -118,7 +166,7 @@ section.puff-container
     margin: 0 auto;
     padding-top: 50px;
 }
-.puff
+.puff-music
 {
     padding: 10px;
     width: 33%;
@@ -127,10 +175,16 @@ section.puff-container
     margin-bottom: 1rem;
     
 }
-.puff>a>img
+.puff-music>a>img
 {
     width: 100%;
-    margin-bottom: 5px;
+    max-width: 500px;
+    border-radius: 0%;
+}
+
+.puff-music h1 {
+    font-size: 1.5rem;
+    justify-content: flex-start;
 }
 .product-title
 {
@@ -161,21 +215,26 @@ footer
     justify-content: space-evenly;
     background-color: whitesmoke;
     align-items: center;
-    
 }
 .links-footer 
-{
+{   
     display: flex;
-    width: 33%;
-    padding: 20px;
+    width: 20%;
+}
+.links-left>img
+{
+    width: 100%;
+    padding: 5%;
 }
 .links-left
 {
     text-align: center;
     flex-direction: column;
+    padding-left: 10%;
 }
 .links-center
-{
+{   
+    margin-left: 15%; 
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-around;
@@ -185,13 +244,15 @@ footer
     flex-direction: column;
     text-align: right;
 }
-.links-right>p 
-{
-    font-size: 1rem;
+.links-right-ul
+{   
+    font-size: 1rem; 
 }
-.links-right>a
+.links-right>img
 {
-    font-size: 1.5rem;
+    width: 30%;
+    margin-left: 60%;
+    padding: 5%;
 }
 .fas
 {
@@ -272,40 +333,6 @@ footer
 
     /* Header och nav styling end */
 
-    /* Footer styling start */
-    section.main-container
-    {
-        width: 100%;
-    }
-    div.content
-    {
-        padding: 0 2.5%;
-    }
-    .product-item
-    {
-        width: 48%;
-    }
-    .links-right, .links-left
-    {
-        width: 10%;
-        display: none;
-    }
-    .links-center
-    {
-        width: 80%;
-        padding-bottom: 20px;
-    }
-    .links-right>p
-    {
-        font-size: 0.5rem;
-    }
-    .links-right>a
-    {
-        font-size: 0.9rem;
-    }
-    .fas
-    {
-        font-size: 1.5rem;
-    }
-    /* Footer styling end */
+   
+   
 }

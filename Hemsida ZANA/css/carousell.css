@@ -2,7 +2,7 @@
 {
     position: relative;
     margin: 0 auto;
-    
+    width: 100%;
     
 }
 
@@ -10,7 +10,7 @@
 .mySlides
 {
     display: none;
-    
+   
 }
 
 /* Nästa- och föregåendeknappar styling start */
@@ -34,6 +34,7 @@
 {
     right: 0;
     border-radius: 3px 0 0 3px;
+    
 }
 .prev:hover, .next:hover 
 {
@@ -77,6 +78,7 @@
     border-radius: 50%;
     display: inline-block;
     transition: background-color 0.6s ease;
+    
 }
 
 .active, .dot:hover 
